@@ -67,10 +67,9 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: nd0821-c3
         environment_name: Nd0821-c3-env
-        version_label: 1
+        version_label: 12345
         region: "us-east-1"
         deployment_package: deploy.zip
-        existing_bucket_name: "pichayoot-nd0821-c3"
 
 
     
