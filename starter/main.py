@@ -77,6 +77,7 @@ def read_item(item: Item):
     raw_features = pd.DataFrame(jsonable_encoder(item), index=[0])
     raw_features.columns = [x.replace('_', '-') for x in raw_features.columns]
     encoded_features, _, _, _ = process_data(raw_features, cat_features, training=False, encoder=encoder, lb=lb)
+    print(encoded_features)
     pred = lb.inverse_transform(inference(model, encoded_features))[0]
     output = {'output': str(pred)}
     return output
