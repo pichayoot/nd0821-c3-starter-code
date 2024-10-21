@@ -5,10 +5,15 @@ from fastapi.encoders import jsonable_encoder
 from starter.ml.model import load_model_artifacts, inference
 from starter.ml.data import process_data
 import pandas as pd
+import os
 
 app = FastAPI()
 
-model, encoder, lb = load_model_artifacts('./model/model.pkl', './model/encoder.pkl', './model/label_binarizer.pkl')
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(ROOT_DIR, 'model', 'model.pkl')
+encoder_path = os.path.join(ROOT_DIR, 'model', 'encoder.pkl')
+lb_path = os.path.join(ROOT_DIR, 'model', 'label_binarizer.pkl')
+model, encoder, lb = load_model_artifacts(model_path, encoder_path, lb_path)
 
 cat_features = [
     "workclass",
