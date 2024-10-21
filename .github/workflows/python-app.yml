@@ -67,7 +67,7 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: nd0821-c3
         environment_name: Nd0821-c3-env
-        version_label: 1
+        version_label: ${{ github.run_number }}
         region: "us-east-1"
         deployment_package: deploy.zip
 
