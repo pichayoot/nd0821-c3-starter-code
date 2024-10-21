@@ -1,0 +1,118 @@
+Categorical columns: workclass, education, marital-status, occupation, relationship, race, sex, native-country
+
+Computing slice performances on workclass:
+Slice: Self-emp-not-inc, Precision: 0.7182, Recall: 0.5603, F1:0.6295
+Slice: Self-emp-inc, Precision: 0.8750, Recall: 0.6642, F1:0.7552
+Slice: Private, Precision: 0.7910, Recall: 0.5105, F1:0.6205
+Slice: State-gov, Precision: 0.7000, Recall: 0.6364, F1:0.6667
+Slice: ?, Precision: 0.5909, Recall: 0.4483, F1:0.5098
+Slice: Local-gov, Precision: 0.7174, Recall: 0.5789, F1:0.6408
+Slice: Never-worked, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: Federal-gov, Precision: 0.8049, Recall: 0.4648, F1:0.5893
+Slice: Without-pay, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+
+Computing slice performances on education:
+Slice: HS-grad, Precision: 0.9138, Recall: 0.1532, F1:0.2624
+Slice: Masters, Precision: 0.7731, Recall: 0.8564, F1:0.8127
+Slice: Some-college, Precision: 0.8780, Recall: 0.2581, F1:0.3989
+Slice: Bachelors, Precision: 0.7099, Recall: 0.8216, F1:0.7617
+Slice: Assoc-acdm, Precision: 1.0000, Recall: 0.4138, F1:0.5854
+Slice: 10th, Precision: 1.0000, Recall: 0.0000, F1:0.0000
+Slice: 5th-6th, Precision: 0.6667, Recall: 0.6667, F1:0.6667
+Slice: Assoc-voc, Precision: 0.9091, Recall: 0.3390, F1:0.4938
+Slice: 7th-8th, Precision: 1.0000, Recall: 0.3333, F1:0.5000
+Slice: Prof-school, Precision: 0.8667, Recall: 0.9479, F1:0.9055
+Slice: 11th, Precision: 1.0000, Recall: 0.4000, F1:0.5714
+Slice: 12th, Precision: 1.0000, Recall: 0.3750, F1:0.5455
+Slice: Doctorate, Precision: 0.7460, Recall: 0.7833, F1:0.7642
+Slice: Preschool, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: 9th, Precision: 1.0000, Recall: 0.0000, F1:0.0000
+Slice: 1st-4th, Precision: 1.0000, Recall: 0.0000, F1:0.0000
+
+Computing slice performances on marital-status:
+Slice: Divorced, Precision: 0.9600, Recall: 0.2637, F1:0.4138
+Slice: Married-civ-spouse, Precision: 0.7660, Recall: 0.5865, F1:0.6644
+Slice: Never-married, Precision: 0.9333, Recall: 0.2800, F1:0.4308
+Slice: Widowed, Precision: 1.0000, Recall: 0.2000, F1:0.3333
+Slice: Married-spouse-absent, Precision: 1.0000, Recall: 0.0000, F1:0.0000
+Slice: Separated, Precision: 1.0000, Recall: 0.2143, F1:0.3529
+Slice: Married-AF-spouse, Precision: 1.0000, Recall: 0.0000, F1:0.0000
+
+Computing slice performances on occupation:
+Slice: Sales, Precision: 0.7656, Recall: 0.5000, F1:0.6049
+Slice: Exec-managerial, Precision: 0.8571, Recall: 0.7050, F1:0.7737
+Slice: Prof-specialty, Precision: 0.7425, Recall: 0.7762, F1:0.7590
+Slice: Tech-support, Precision: 0.8214, Recall: 0.3898, F1:0.5287
+Slice: ?, Precision: 0.5909, Recall: 0.4483, F1:0.5098
+Slice: Adm-clerical, Precision: 0.6552, Recall: 0.3519, F1:0.4578
+Slice: Transport-moving, Precision: 0.8667, Recall: 0.2097, F1:0.3377
+Slice: Handlers-cleaners, Precision: 0.6667, Recall: 0.2000, F1:0.3077
+Slice: Other-service, Precision: 0.6250, Recall: 0.2174, F1:0.3226
+Slice: Craft-repair, Precision: 0.7321, Recall: 0.2216, F1:0.3402
+Slice: Farming-fishing, Precision: 0.6364, Recall: 0.4118, F1:0.5000
+Slice: Machine-op-inspct, Precision: 0.6667, Recall: 0.1379, F1:0.2286
+Slice: Protective-serv, Precision: 0.8636, Recall: 0.4524, F1:0.5938
+Slice: Priv-house-serv, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: Armed-Forces, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+
+Computing slice performances on relationship:
+Slice: Not-in-family, Precision: 0.9444, Recall: 0.2772, F1:0.4286
+Slice: Unmarried, Precision: 1.0000, Recall: 0.1750, F1:0.2979
+Slice: Husband, Precision: 0.7755, Recall: 0.5916, F1:0.6712
+Slice: Own-child, Precision: 1.0000, Recall: 0.1429, F1:0.2500
+Slice: Wife, Precision: 0.7059, Recall: 0.5676, F1:0.6292
+Slice: Other-relative, Precision: 0.0000, Recall: 0.0000, F1:1.0000
+
+Computing slice performances on race:
+Slice: White, Precision: 0.7869, Recall: 0.5342, F1:0.6364
+Slice: Black, Precision: 0.7143, Recall: 0.4375, F1:0.5426
+Slice: Other, Precision: 0.5000, Recall: 0.3333, F1:0.4000
+Slice: Asian-Pac-Islander, Precision: 0.6491, Recall: 0.7255, F1:0.6852
+Slice: Amer-Indian-Eskimo, Precision: 1.0000, Recall: 0.6250, F1:0.7692
+
+Computing slice performances on sex:
+Slice: Male, Precision: 0.7823, Recall: 0.5536, F1:0.6484
+Slice: Female, Precision: 0.7391, Recall: 0.4340, F1:0.5469
+
+Computing slice performances on native-country:
+Slice: United-States, Precision: 0.7892, Recall: 0.5330, F1:0.6362
+Slice: Mexico, Precision: 0.5000, Recall: 0.2500, F1:0.3333
+Slice: Jamaica, Precision: 0.0000, Recall: 0.0000, F1:1.0000
+Slice: Iran, Precision: 0.5000, Recall: 0.5000, F1:0.5000
+Slice: Vietnam, Precision: 0.0000, Recall: 1.0000, F1:0.0000
+Slice: Yugoslavia, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: Cuba, Precision: 1.0000, Recall: 0.5000, F1:0.6667
+Slice: Philippines, Precision: 0.7857, Recall: 0.7857, F1:0.7857
+Slice: ?, Precision: 0.6897, Recall: 0.6061, F1:0.6452
+Slice: Hong, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: Japan, Precision: 0.6000, Recall: 0.5000, F1:0.5455
+Slice: South, Precision: 0.2000, Recall: 0.5000, F1:0.2857
+Slice: France, Precision: 1.0000, Recall: 0.5000, F1:0.6667
+Slice: Germany, Precision: 0.6667, Recall: 0.4444, F1:0.5333
+Slice: Puerto-Rico, Precision: 1.0000, Recall: 0.2000, F1:0.3333
+Slice: Guatemala, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: India, Precision: 0.5556, Recall: 0.8333, F1:0.6667
+Slice: Canada, Precision: 0.6667, Recall: 0.5000, F1:0.5714
+Slice: England, Precision: 0.8333, Recall: 0.8333, F1:0.8333
+Slice: Nicaragua, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: Ecuador, Precision: 1.0000, Recall: 0.0000, F1:0.0000
+Slice: Peru, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: China, Precision: 0.6667, Recall: 1.0000, F1:0.8000
+Slice: Italy, Precision: 1.0000, Recall: 0.3333, F1:0.5000
+Slice: Trinadad&Tobago, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: Poland, Precision: 0.3333, Recall: 1.0000, F1:0.5000
+Slice: Haiti, Precision: 1.0000, Recall: 0.0000, F1:0.0000
+Slice: Honduras, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: Columbia, Precision: 1.0000, Recall: 0.5000, F1:0.6667
+Slice: Ireland, Precision: 1.0000, Recall: 0.5000, F1:0.6667
+Slice: El-Salvador, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: Dominican-Republic, Precision: 1.0000, Recall: 0.0000, F1:0.0000
+Slice: Portugal, Precision: 1.0000, Recall: 0.0000, F1:0.0000
+Slice: Outlying-US(Guam-USVI-etc), Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: Greece, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: Laos, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: Taiwan, Precision: 1.0000, Recall: 0.6667, F1:0.8000
+Slice: Thailand, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: Cambodia, Precision: 0.0000, Recall: 1.0000, F1:0.0000
+Slice: Hungary, Precision: 1.0000, Recall: 1.0000, F1:1.0000
+Slice: Scotland, Precision: 1.0000, Recall: 1.0000, F1:1.0000

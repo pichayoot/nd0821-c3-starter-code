@@ -1,4 +1,2 @@
-[core]
-    remote = s3remote
 ['remote "s3remote"']
-    url = s3://pichayoot-nd0821-c3/data/
+    url = s3://pichayoot-nd0821-c3/udacity_project3/

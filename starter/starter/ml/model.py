@@ -1,4 +1,6 @@
 from sklearn.metrics import fbeta_score, precision_score, recall_score
+from sklearn.ensemble import RandomForestClassifier
+import pickle
 
 
 # Optional: implement hyperparameter tuning.
@@ -17,8 +19,9 @@ def train_model(X_train, y_train):
     model
         Trained machine learning model.
     """
-
-    pass
+    model = RandomForestClassifier(n_estimators=20, max_depth=10, random_state=42)
+    model.fit(X_train, y_train)
+    return model
 
 
 def compute_model_metrics(y, preds):
@@ -57,4 +60,31 @@ def inference(model, X):
     preds : np.array
         Predictions from the model.
     """
-    pass
+    return model.predict(X)
+
+
+def compute_slice_performance(model, X_raw, X_encoded, y, cat_features, output_path='../slice_output.txt'):
+    with open(output_path, 'w') as f:
+        f.write(f'Categorical columns: {", ".join(cat_features)}\n')
+        for slice_col in cat_features:
+            f.write(f'\nComputing slice performances on {slice_col}:\n')
+            for slice in X_raw[slice_col].unique():
+                slice_idx = X_raw[X_raw[slice_col] == slice].index
+
+                slice_preds = inference(model, X_encoded[slice_idx])
+                precision, recall, f1 = compute_model_metrics(y[slice_idx], slice_preds)
+
+                f.write(f'Slice: {slice}, Precision: {precision:.4f}, Recall: {recall:.4f}, F1:{f1:.4f}\n')
+
+
+def load_model_artifacts(model_path, encoder_path, lb_path):
+    with open(model_path, 'rb') as f:
+        model = pickle.load(f)
+
+    with open(encoder_path, 'rb') as f:
+        encoder = pickle.load(f)
+
+    with open(lb_path, 'rb') as f:
+        lb = pickle.load(f)
+
+    return model, encoder, lb
